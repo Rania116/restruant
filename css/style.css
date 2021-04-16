@@ -1,0 +1,424 @@
+                                                                                           :root {
+                                                                                              --yellow: #fdcc70;
+                                                                                          }
+                                                                                          
+                                                                                          * {
+                                                                                              font-family: 'Raleway', sans-serif;
+                                                                                              margin: 0;
+                                                                                              padding: 0;
+                                                                                              box-sizing: border-box;
+                                                                                              text-decoration: none;
+                                                                                              outline: none;
+                                                                                              border: none;
+                                                                                              text-transform: capitalize;
+                                                                                              transition: all .2s linear;
+                                                                                          }
+                                                                                          
+                                                                                          *::selection {
+                                                                                              background-color: var(--yellow);
+                                                                                              color: #fff;
+                                                                                          }
+                                                                                          
+                                                                                          html {
+                                                                                              font-size: 62.5%;
+                                                                                              overflow-x: hidden;
+                                                                                          }
+                                                                                          
+                                                                                          body {
+                                                                                              overflow-x: hidden;
+                                                                                          }
+                                                                                          
+                                                                                          body.dark-theme {
+                                                                                              background-color: #222;
+                                                                                              color: #fff;
+                                                                                          }
+                                                                                          
+                                                                                          body.color-theme {
+                                                                                              background-color: rgb(238, 120, 120);
+                                                                                          }
+                                                                                          
+                                                                                          html::-webkit-scrollbar {
+                                                                                              width: 1.4em;
+                                                                                          }
+                                                                                          
+                                                                                          html::-webkit-scrollbar-track {
+                                                                                              background-color: #fff;
+                                                                                          }
+                                                                                          
+                                                                                          html::-webkit-scrollbar-thumb {
+                                                                                              background-color: var(--yellow);
+                                                                                          }
+                                                                                          
+                                                                                          header {
+                                                                                              position: fixed;
+                                                                                              top: 0;
+                                                                                              left: 0;
+                                                                                              z-index: 1000;
+                                                                                              background-color: #fff;
+                                                                                              padding: 1.5rem 10%;
+                                                                                              box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, .3);
+                                                                                              display: flex;
+                                                                                              align-items: center;
+                                                                                              justify-content: space-between;
+                                                                                              width: 100%;
+                                                                                          }
+                                                                                          
+                                                                                          header .logo {
+                                                                                              color: #fdcc70;
+                                                                                          }
+                                                                                          
+                                                                                          header .navber ul {
+                                                                                              display: flex;
+                                                                                              align-items: center;
+                                                                                              justify-content: center;
+                                                                                              list-style: none;
+                                                                                          }
+                                                                                          
+                                                                                          header .navber ul li {
+                                                                                              margin-left: 3rem;
+                                                                                          }
+                                                                                          
+                                                                                          .change-theme {
+                                                                                              position: absolute;
+                                                                                              right: 1rem;
+                                                                                              top: 1.8rem;
+                                                                                              color: #777;
+                                                                                              cursor: pointer;
+                                                                                          }
+                                                                                          
+                                                                                          .color {
+                                                                                              position: absolute;
+                                                                                              right: 8rem;
+                                                                                              top: 1.8rem;
+                                                                                              color: #777;
+                                                                                              cursor: pointer;
+                                                                                          }
+                                                                                          
+                                                                                          header .navber ul li a {
+                                                                                              font-size: 1.8rem;
+                                                                                              color: #666;
+                                                                                          }
+                                                                                          
+                                                                                          header .navber ul li a.active,
+                                                                                          header .navber ul li a:hover {
+                                                                                              color: var(--yellow);
+                                                                                          }
+                                                                                          
+                                                                                          header #menu-bar {
+                                                                                              font-size: 3rem;
+                                                                                              color: #666;
+                                                                                              cursor: pointer;
+                                                                                              display: none;
+                                                                                          }
+                                                                                          
+                                                                                          section {
+                                                                                              min-height: 100vh;
+                                                                                              padding: 1rem 10%;
+                                                                                              padding-top: 8.5rem;
+                                                                                          }
+                                                                                          
+                                                                                          .btn {
+                                                                                              font-size: 1.7rem;
+                                                                                              padding: .7rem 4rem;
+                                                                                              border-radius: 5rem;
+                                                                                              margin-top: 1rem;
+                                                                                              background: none;
+                                                                                              color: #444;
+                                                                                              cursor: pointer;
+                                                                                              border: .2rem solid var(--yellow);
+                                                                                          }
+                                                                                          
+                                                                                          .btn:hover {
+                                                                                              background: var(--yellow);
+                                                                                          }
+                                                                                          
+                                                                                          .home {
+                                                                                              display: flex;
+                                                                                              align-items: center;
+                                                                                              justify-content: center;
+                                                                                              flex-wrap: wrap;
+                                                                                              position: relative;
+                                                                                              z-index: 0;
+                                                                                              overflow: hidden;
+                                                                                          }
+                                                                                          
+                                                                                          .home .image {
+                                                                                              flex: 1 1 39rem;
+                                                                                          }
+                                                                                          
+                                                                                          .home .image img {
+                                                                                              width: 100%;
+                                                                                          }
+                                                                                          
+                                                                                          .home .content {
+                                                                                              flex: 1 1 39rem;
+                                                                                          }
+                                                                                          
+                                                                                          .home .content h3 {
+                                                                                              color: #444;
+                                                                                              font-size: 6rem;
+                                                                                          }
+                                                                                          
+                                                                                          .home .content p {
+                                                                                              color: #666;
+                                                                                              font-size: 2rem;
+                                                                                              padding: 1rem 0;
+                                                                                          }
+                                                                                          
+                                                                                          .home::before,
+                                                                                          .home::after {
+                                                                                              content: '';
+                                                                                              position: absolute;
+                                                                                              top: 5rem;
+                                                                                              right: -6rem;
+                                                                                              background: var(--yellow);
+                                                                                              border-radius: 3rem;
+                                                                                              transform: rotate(-45deg);
+                                                                                              height: 40rem;
+                                                                                              width: 70rem;
+                                                                                              z-index: -2;
+                                                                                              animation: animte 1s linear 1;
+                                                                                          }
+                                                                                          
+                                                                                          .heading {
+                                                                                              text-align: center;
+                                                                                              font-size: 4rem;
+                                                                                              padding: 0 .5rem;
+                                                                                              color: #444;
+                                                                                          }
+                                                                                          
+                                                                                          .heading span {
+                                                                                              color: var(--yellow);
+                                                                                          }
+                                                                                          
+                                                                                          .menu .list {
+                                                                                              display: flex;
+                                                                                              align-items: center;
+                                                                                              justify-content: center;
+                                                                                              flex-wrap: wrap;
+                                                                                              list-style: none;
+                                                                                              padding: 1rem 0;
+                                                                                              margin: 2rem 0;
+                                                                                          }
+                                                                                          
+                                                                                          .menu .list .btn {
+                                                                                              margin: 1rem;
+                                                                                          }
+                                                                                          
+                                                                                          .menu .row {
+                                                                                              display: flex;
+                                                                                              align-items: center;
+                                                                                              justify-content: center;
+                                                                                              flex-wrap: wrap;
+                                                                                          }
+                                                                                          
+                                                                                          .menu .row .image {
+                                                                                              margin: 2rem;
+                                                                                              padding: 2rem;
+                                                                                              flex: 1 2 40rem;
+                                                                                              border-radius: 1rem;
+                                                                                              box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+                                                                                          }
+                                                                                          
+                                                                                          .menu .row .image img {
+                                                                                              width: 100%;
+                                                                                              object-fit: cover;
+                                                                                              border-radius: 1.2rem;
+                                                                                          }
+                                                                                          
+                                                                                          .menu .row .content {
+                                                                                              flex: 1 1 40rem;
+                                                                                          }
+                                                                                          
+                                                                                          .menu .row .content .info {
+                                                                                              padding: 1rem 0;
+                                                                                          }
+                                                                                          
+                                                                                          .menu .row .content .info h3 {
+                                                                                              display: flex;
+                                                                                              align-items: center;
+                                                                                              font-size: 2.5rem;
+                                                                                              color: #555;
+                                                                                          }
+                                                                                          
+                                                                                          .menu .row .content .info h3 span {
+                                                                                              color: var(--yellow);
+                                                                                              padding-right: 1rem;
+                                                                                              color: var(--yellow);
+                                                                                          }
+                                                                                          
+                                                                                          .menu .row .content .info p {
+                                                                                              padding: 1rem 0;
+                                                                                              padding-left: 4.3rem;
+                                                                                              font-size: 1.5rem;
+                                                                                              color: #777;
+                                                                                          }
+                                                                                          
+                                                                                          .menu .list .btn.active,
+                                                                                          .menu .list .btn:hover {
+                                                                                              background-color: var(--yellow);
+                                                                                              color: #FFF;
+                                                                                          }
+                                                                                          
+                                                                                          @keyframes animte {
+                                                                                              0% {
+                                                                                                  transform: rotate(45deg) translate(-40rem);
+                                                                                              }
+                                                                                          }
+                                                                                          
+                                                                                          .home::before {
+                                                                                              top: -7rem;
+                                                                                              background-color: #fff;
+                                                                                              box-shadow: 0 1rem 4rem rgba(0, 0, 0, .4);
+                                                                                              z-index: -1;
+                                                                                          }
+                                                                                          
+                                                                                          .about {
+                                                                                              display: flex;
+                                                                                              align-items: center;
+                                                                                              justify-content: center;
+                                                                                              flex-wrap: wrap;
+                                                                                          }
+                                                                                          
+                                                                                          .about .image {
+                                                                                              flex: 1 1 40rem;
+                                                                                              height: 50rem;
+                                                                                              background-image: url(../image/about-frame-img.png ), url(../image/about-img.jpg);
+                                                                                              background-size: cover;
+                                                                                              background-position: center;
+                                                                                              background-blend-mode: screen;
+                                                                                          }
+                                                                                          
+                                                                                          .about .content {
+                                                                                              flex: 1 1 40rem;
+                                                                                              padding: 2rem;
+                                                                                          }
+                                                                                          
+                                                                                          .about .content h3 {
+                                                                                              font-size: 4rem;
+                                                                                              color: #444;
+                                                                                          }
+                                                                                          
+                                                                                          .about .content p {
+                                                                                              font-size: 1.6rem;
+                                                                                              color: #666;
+                                                                                              padding: 2rem 0;
+                                                                                          }
+                                                                                          
+                                                                                          .popular {
+                                                                                              /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../image/5.jpeg);
+                                                                                       background-size: cover;
+                                                                                       background-position: center;
+                                                                                       background-attachment: fixed; */
+                                                                                          }
+                                                                                          
+                                                                                          .popular .box-conainer {
+                                                                                              display: flex;
+                                                                                              align-items: center;
+                                                                                              justify-content: center;
+                                                                                              flex-wrap: wrap;
+                                                                                          }
+                                                                                          
+                                                                                          .popular .box-conainer .box {
+                                                                                              background: #fff;
+                                                                                              width: 35rem;
+                                                                                              /* padding: 2rem; */
+                                                                                              margin: 2rem;
+                                                                                              border-radius: 2rem;
+                                                                                              box-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.2);
+                                                                                              text-align: center;
+                                                                                              height: 40rem;
+                                                                                          }
+                                                                                          
+                                                                                          .popular .box-conainer .box img {
+                                                                                              height: 20rem;
+                                                                                              width: 100%;
+                                                                                              object-fit: cover;
+                                                                                              border-radius: 2rem 2rem 0 0;
+                                                                                          }
+                                                                                          
+                                                                                          .popular .box-conainer .box h3 {
+                                                                                              color: #444;
+                                                                                              font-size: 3rem;
+                                                                                              font-weight: normal;
+                                                                                          }
+                                                                                          
+                                                                                          .popular .box-conainer .box .price {
+                                                                                              color: #444;
+                                                                                              font-size: 2.5rem;
+                                                                                          }
+                                                                                          
+                                                                                          .popular .box-conainer .box:hover {
+                                                                                              transform: scale(1.1);
+                                                                                              box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+                                                                                          }
+                                                                                          
+                                                                                          @media(max-width:991px) {
+                                                                                              html {
+                                                                                                  font-size: 55%;
+                                                                                              }
+                                                                                              .home::before,
+                                                                                              .home::after {
+                                                                                                  display: none;
+                                                                                              }
+                                                                                          }
+                                                                                          
+                                                                                          @media(max-width:768px) {
+                                                                                              header #menu-bar {
+                                                                                                  display: block;
+                                                                                              }
+                                                                                              header .navber {
+                                                                                                  position: fixed;
+                                                                                                  top: 8rem;
+                                                                                                  left: 0;
+                                                                                                  width: 100%;
+                                                                                                  background-color: var(--yellow);
+                                                                                                  border-top: .2rem solid rgba(0, 0, 0, 1);
+                                                                                                  transform: scaleY(0);
+                                                                                                  transform-origin: top;
+                                                                                                  opacity: 0;
+                                                                                              }
+                                                                                              header .navber ul {
+                                                                                                  flex-flow: column;
+                                                                                                  padding: 2rem;
+                                                                                              }
+                                                                                              header .navber ul li {
+                                                                                                  margin: 1.5rem;
+                                                                                                  width: 100%;
+                                                                                              }
+                                                                                              header .navber ul li a {
+                                                                                                  display: block;
+                                                                                                  color: #fff;
+                                                                                                  padding-left: 2rem;
+                                                                                                  border-left: .2rem solid #fff;
+                                                                                                  font-size: 2rem;
+                                                                                              }
+                                                                                              header .navber ul li a:hover,
+                                                                                              header .navber ul li a.active {
+                                                                                                  color: #333;
+                                                                                                  border-color: #333;
+                                                                                              }
+                                                                                              .fa-times {
+                                                                                                  transform: rotate(180deg);
+                                                                                              }
+                                                                                              header .navber.nav-toggle {
+                                                                                                  transform: scaleY(1);
+                                                                                                  opacity: 1;
+                                                                                              }
+                                                                                              .home .content {
+                                                                                                  text-align: center;
+                                                                                              }
+                                                                                              .home .content h3 {
+                                                                                                  font-size: 4.5rem;
+                                                                                              }
+                                                                                          }
+                                                                                          
+                                                                                          @media(max-width:500px) {
+                                                                                              html {
+                                                                                                  font-size: 55%;
+                                                                                              }
+                                                                                              section {
+                                                                                                  padding: 1rem 5%;
+                                                                                                  padding-top: 8.5rem;
+                                                                                              }
+                                                                                          }
